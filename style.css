@@ -16,10 +16,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
-b.personaltitle{
+b.personaltitle_lightmode{
     font-weight: bold;
     font-size: 23px;
     margin-left: 10px;
+    color: black;
+}
+b.personaltitle_darkmode{
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 10px;
+    color: white;
+}
+b.personalsubtitle{
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 10px;
+    color: #a000a0;
 }
 img.profileimg {
     width: 90px; 
@@ -28,10 +41,11 @@ img.profileimg {
 }
 h1, h2 {
     text-align: center;
+    color: white;
 }
-button {
-    background-color: #E9ECF0;
-    color: black;
+button.lightmode {
+    background-color: #a3a3a3;
+    color: white; /* black; */
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -49,6 +63,31 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+button.darkmode {
+    background-color: #333333;
+    color: white; /* black; */
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s;
+    display: block;
+    width: 350px; /* Set a fixed width for the button */
+    word-wrap: break-word; /* Allow text to wrap */
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 20px; /* Gap underneath each button */
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 button:hover {
     background-color: #797979;
